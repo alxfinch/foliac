@@ -86,6 +86,7 @@ header h2 {
 }
 .portfolio {
 	background-color: #f9f9f9;
+	font-size: 0;
 }
 .portfolio1 {
 	margin-left: 20%;
@@ -96,6 +97,7 @@ header h2 {
 }
 ul {
 	list-style-type: none;
+	padding-bottom: 51px;
 }
 .portfolio1>ul>li {
 	display: inline-block;
@@ -113,34 +115,52 @@ ul {
 	background-color: #48bf72;
 	color: #ffffff;
 }
-.items1 {
+.portfolio1 h4 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 30px;
+	text-align: center;
+}
+.portfolio1 p {
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 30px;
+	text-align: center;
+}
+.new_items, .old_items, .tel, .layers {
 	display: inline-block;
 	position: relative;
-	padding-top: 51px;
-	width: 450px;
-	margin-right: 35px;
+	left: -21px;
 }
-.items1 img:first-child, .items2 img:first-child {
-	margin-bottom: 35px;
+.new_items, .tel, .layers {
+	top: -136px;
 }
- .items2 {
-	display: inline-block;
-	position: relative;
-	padding-top: 51px;
-	width: 650px;
+.old_items, .layers {
+	left: 19px;
 }
-.portfolio1 img:hover {
+.tel, .layers {
+	margin-top: 40px;
+	top: -136px;
+}
+.green {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* cursor: pointer; */
-	content: "Forest app";
-	background-color: #48bf72;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: #48bf72;
+	border-radius: 10px;
 	opacity: 0.9;
-	mix-blend-mode: normal;
+}
+.new_items:hover .green, .tel:hover .green, .old_items:hover .green, .layers:hover .green {
+	display: inline-block;
+	vertical-align: middle;
 }
 .about {
 	background-image: url('img/about.jpg');
+	margin-top: -136px;
 	padding-top: 82px;
 	padding-bottom: 82px;
 }
