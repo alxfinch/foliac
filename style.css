@@ -37,6 +37,7 @@ body>div {
 	background-color: black;
 	color: #ffffff;
 	background-image: url('img/hero.jpg');
+	background: cover;
 }
 .hero1 {
 	margin-left: 20%;
@@ -90,10 +91,8 @@ header h2 {
 	text-align: center;
 }
 .portfolio1 {
-	/* margin-left: 20%; */
 	padding-top: 51px;
 	padding-bottom: 89px;
-	/* width: 60%; */
 	text-align: center;
 }
 ul {
@@ -134,7 +133,7 @@ ul {
 	width: 23.5%;
 	margin-right: 40px;
 }
-.block1 div:last-child, .block2 div:last-child {
+.block1>div:last-child, .block2>div:last-child {
 	margin-top: 40px;
 }
 .block2 {
@@ -148,17 +147,6 @@ ul {
 .new_items, .old_items, .tel, .layers {
 	display: inline-block;
 	position: relative;
-	/* left: -21px; */
-}
-.new_items, .tel, .layers {
-	/* top: -136px; */
-}
-.old_items, .layers {
-	/* left: 19px; */
-}
-.tel, .layers {
-	/* margin-top: 40px;
-	top: -136px; */
 }
 .green {
 	position: absolute;
@@ -167,17 +155,23 @@ ul {
 	width: 100%;
 	height: 100%;
 	display: none;
-	background: #48bf72;
-	border-radius: 2.3%;
-	opacity: 0.9;
+	background: rgba(72, 191, 114, 0.9);
+	border-radius: 2.1%;
+}
+.text {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .new_items:hover .green, .tel:hover .green, .old_items:hover .green, .layers:hover .green {
 	display: inline-block;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 }
 .about {
 	background-image: url('img/about.jpg');
-	/* margin-top: -136px; */
+	background: cover;
 	padding-top: 82px;
 	padding-bottom: 82px;
 }
@@ -352,7 +346,7 @@ footer p {
 	display: inline-block;
 	float: right;
 	margin-top: 81px;
-	margin-right: 40px;
+	margin-right: 4%;
 }
 .down>ul>li:first-child {
 	padding-right: 0px;
