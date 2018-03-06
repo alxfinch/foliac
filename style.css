@@ -37,7 +37,7 @@ body>div {
 	background-color: black;
 	color: #ffffff;
 	background-image: url('img/hero.jpg');
-	background: cover;
+	background-size: cover;
 }
 .hero1 {
 	margin-left: 20%;
@@ -171,7 +171,7 @@ ul {
 }
 .about {
 	background-image: url('img/about.jpg');
-	background: cover;
+	background-size: cover;
 	padding-top: 82px;
 	padding-bottom: 82px;
 }
